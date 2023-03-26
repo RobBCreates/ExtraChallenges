@@ -1,0 +1,27 @@
+02-Task-C++ Debug Trace
+
+- GOAL - 
+Become more familiar with debugging options in C++, understanding the difference between World trace and Kismet trace. We'll start here with the World trace as this is the one you'll see used by default most often. 
+
+1. Open the DebugActor class in the C++ Tasks folder. 
+
+2. Define some components in the header file, a visual representation is optional but we'll need a URotatingMovementComponent again. Then Create these using the default approach in the code file. 
+
+3. In the header, we'll need a way to select which type of trace to use at runtime; a boolean or enum would work here. I've gone for an enum to make it clear and easy to choose which functionality to use, either World or Kismet. 
+
+4. In the Tick function, implement the LineTraceSingleByChannel functionality inside of an if check based on the boolean or enum created in point 3 if the World type is selected. 
+
+5. When you think you have the LinetraceTraceSingleByChannel  functionality implemented, compile the project, add your new Actor into the world and press play to test the results. You'll likely notice that it looks as though nothing is happening. This is the main difference between World linetrace and Kismet linetrace. 
+
+6. Back in the code file, using the information you should already have such as the Start, End and Hit information. Implement some Debug function calls to visualise what your linetrace is doing.
+
+7. The first will be the DrawDebugLine which should be the same length and direction of your LineTrace.
+
+8. To make this option work a little more like the Kismet option we can also throw in a DrawDebugSphere at the location of the hit location of the linetrace. This will replace the small square drawn when the Kismet linetrace hits a surface. 
+
+-- HINTS --
+
+- Remember to break large tasks into their smaller sub tasks to keep things simple. If anything is new here, all of this can be tracked down easily on Google. The main topics to get working are as follows --- 
+ * LineTraceSingleByChannel
+ * DrawDebugLine
+ * DrawDebugSphere

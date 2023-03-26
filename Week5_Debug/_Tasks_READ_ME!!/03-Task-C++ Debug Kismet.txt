@@ -1,0 +1,17 @@
+03-Task-C++ Debug Kismet
+
+- GOAL - 
+Become more familiar with debugging options in C++, understanding the difference between World trace and Kismet trace. This time we're looking at the Kismet functionality. 
+
+1. Open the DebugActor class in the C++ Tasks folder. 
+
+2. In the Tick function, implement the LineTraceSingle functionality inside of the existing if check for the trace type, this time inside of the Kismet result. To help find information on this topic you're specifically looking for the UKismetSystemLibrary::LineTraceSingle
+
+3. You'll likely notice as you're filling the function parameters there are options this time for things like DrawDebugTrace, Color and DrawTime. These are all the same options you've seen on the Blueprint LineTrace from Task 1. With these filled, compile and test the new trace type in the editor. Remember to toggle your enum or boolean to switch which function to use. 
+
+
+-- HINTS --
+
+If you have completed points 1 to 3, take a look at the DebugActorSolution class provided in the C++ TaskSolutions folder. 
+Take note of the steps taken to make this class as easy and flexible to work with as possible. 
+Using a mix of enums and booleans to easily toggle between different function calls and whether or not to draw the debug information will be a useful process to become familiar with to save time when testing.

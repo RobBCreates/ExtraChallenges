@@ -1,0 +1,20 @@
+01-Task-Blueprint Debug Trace
+
+- GOAL - 
+Become more familiar with debugging options in Blueprint.
+
+1. Create a new Blueprint Actor class named BP_DebugActor and place it in the Tasks Folder. 
+
+2. Inside of BP_DebugActor, call the LineTraceByChannel function on the EventTick. Make this trace forward based on the Actors Forward Vector - See hints if this is new to you.
+
+3. Add a RotatingMovementComponent to your BP_DebugActor. This will make the Actor automatically rotate when placed in the world when you press play. 
+
+4. Play around with the different Draw Debug options on the linetrace node dropdown to see what is being shown whilst tracing with the different options. Try changing the Trace colour, Trace Hit colour and Draw time. 
+
+5. Try adding a Debug sphere to the location the line trace is hitting. If you don't already, you might need to add a static mesh to the level for the trace to hit. 
+
+-- HINTS --
+
+- IMPORTANT -- This type of LineTrace in blueprint classes uses the functionality from the Kismet libraray in Unreal. This will be relevant in the future tasks when working with C++. 
+
+- If you're unfamiliar with Tracing or tracing directions, there is a wealth of information on this online, try to find the solution there before looking at the BP_DebugActorSolution. You know you're on the right track if you have a couple of Vector calculations and a float for the trace distance.

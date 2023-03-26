@@ -1,0 +1,25 @@
+02-Task-C++ Jumping
+
+- GOAL - 
+Become more familiar with the built in Character class functionalities, namely the Jump function and understand how we could implement something similar into a custom Pawn class.  
+
+1. Using the PlayerPawnJump class in the Tasks code folder, implement the components required as mentioned in point two below. Although we've done this in BP in the past, it could be useful to repeat declaring and defining components in C++ for familiarity. 
+
+2. Implement the components, Capsule collider, Mesh, Spring Arm and Camera. If you're unsure how to do this in C++, try to find the answers online first and then compare your results with the implementation in the PlayerPawnJumpSolution class when you're finished. 
+
+3. Implement a jump function using the Jump Action Binding provided. Important things to consider. We're doing this BEFORE movement in C++ due to an input binding bug that maybe encountered and movement is not the focus htis week.
+- How to add the vertical movement? Would ApplyForce or ApplyImpulse be more fitting.
+- Does your initial attempt allow for infinite jumps? How could this be solved? 
+- If you have capped the number of jumps it's possible to make, are you resetting it so you can jump again? If not how might this be achieved? Consider the player needs to land.
+
+4. Implement basic movement with the MoveForward and MoveRight input bindings already provided. As it's not the topic of the week, you could again copy and paste this from Week 3. There seems to be a bug where input bindings are not being tracked when defined by text. If you encounter this then copy the movement functionality from the PlayerPawnJumpSolution. 
+
+-- HINTS --
+
+- Don't forget to set this to be the DefaultPawn in the project GameMode
+
+- If you're unsure whether to use Impulse or Force for the jump, check the official documentation or just hover over the nodes to see their descriptions. One is definitely better suited for a jump functionality. 
+
+- You'll likely only need a few variables to get this going. JumpCount, MaxJumpCount, JumpForce. Think about how you'd track these. You'll also need MoveSpeed but that's being carried over from Week3. 
+
+- To compare your results for the C++ approach, check the BP_PlayerPawnJumpSolutionCode in the Blueprint Solutions folder and the PlayerPawnJumpSolution class in the code Solutions folder. 

@@ -1,0 +1,25 @@
+01-Task-Blueprint Jumping
+
+- GOAL - 
+Become more familiar with the built in Character class functionalities, namely the Jump function and understand how we could implement something similar into a custom Pawn class.  
+
+1. Create a new Pawn class completely in Blueprint and name it something like BP_PlayerJump. 
+
+2. Implement the components, Capsule collider, Mesh, Spring Arm and Camera. You can copy and paste these from Week 3 pawn into your new pawn.
+
+3. Implement basic movement with the MoveForward and MoveRight input bindings already provided. As it's not the topic of the week, you could again copy and paste this from Week 3. 
+
+3. Implement a jump function using the Jump Action Binding provided. Important things to consider.
+- How to add the vertical movement? Would ApplyForce or ApplyImpulse be more fitting.
+- Does your initial attempt allow for infinite jumps? How could this be solved? 
+- If you have capped the number of jumps it's possible to make, are you resetting it so you can jump again? If not how might this be achieved? Consider the player needs to land.
+
+-- HINTS --
+
+- Don't forget to set this to be the DefaultPawn in the project GameMode
+
+- If you're unsure whether to use Impulse or Force for the jump, check the official documentation or just hover over the nodes to see their descriptions. One is definitely better suited for a jump functionality. 
+
+- You'll likely only need a few variables to get this going. JumpCount, MaxJumpCount, JumpForce. Think about how you'd track these. You'll also need MoveSpeed but that's being carried over from Week3. 
+
+- To compare your results for the blueprint approach, check the BP_PlayerPawnJumpSolutionBP in the Blueprint Solutions folder. 

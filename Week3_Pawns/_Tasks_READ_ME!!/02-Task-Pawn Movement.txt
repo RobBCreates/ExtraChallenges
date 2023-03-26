@@ -1,0 +1,21 @@
+02-Task-Pawn Movement
+
+- GOAL - 
+Understand how to get basic Player Movement working without relying on the Character class. 
+The Character class along with the CharacterMovementComponent handle A LOT of logic under the hood. For new developers this can hide a lot of what goes into a character movement system so we're going to break down the basics in a Pawn class that doesn't come with any default movement functionality. 
+
+** NOTE ** I've purposely left out the jump and double jump topic as that will be the focus of next week which will require some depth. 
+
+1. Read through all the comments in BP_PlayerPawnSolution. There are two different types of movement implemented, one relying slightly on the same functionality as the Character class using the CharacterMovementCompont and one function implementing 100% custom movement functionality.
+
+2. Understand what is happening in the movement logic and also take note of the compents implemented to visualise the player, the camera ect. 
+
+3. Move all of the movement logic into C++. Create a new C++ class of type Pawn, named "PlayerPawn".
+Create two custom functions for MovementTypeOne and MovementTypeTwo and replicate the BP logic for both. 
+
+-- HINTS --
+- It might be easier to just copy my BP_PlayerPawnSolution into the weekly folder and rename it to BP_PlayerPawn as it already has all the components and physics setup you'll need and they aren't really the topic for the week. You can check out all the settings in the details panel though to see how it's all setup. 
+
+- After creating your own C++ "PlayerPawn" class, remember to reparent it to your BP_PlayerPawn and unhook the BP functionality to ensure your C++ class is driving the logic. 
+
+- IMPORTANT!! Remember to set your new BP_PlayerPawn as the defaultPawn in the project GameMode to test the movement, you're likely still controlling BP_PlayerCharacter. 

@@ -1,0 +1,23 @@
+01-Task-Rotating Cube
+
+- GOAL - 
+Understand basic Blueprint and C++ logic, Class setup and inheritance. 
+
+1. Look at BP_RotatingCube and see how it's setup
+
+2. Test the class by simulating the level and see the results
+
+3. Note that the BP class is derived from the C++ RotatingCube
+
+4. Look at the different variables, how they're definied and how/where they can be accessed in the editor/blueprint panels
+
+5. When you're familiar with the BP functionality, begin moving the code functionality from the blueprint into the C++ RotatingCube class.
+
+-- HINTS --
+- You have the variables you need in C++ 
+
+- Remember to remove your BP code to avoid conflicts
+
+- The names of the C++ functions are very similar, if you need more info on them Google the specific function name in context. i.e "UE4 C++ AddActorLocalRotation()"
+
+- The final resulting functionality should be the same as the BP. Rotating in one direction for x seconds then flipping the rotation direction. 

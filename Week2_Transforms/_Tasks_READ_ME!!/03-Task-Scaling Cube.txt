@@ -1,0 +1,22 @@
+03-Task-Scaling Cube
+
+- GOAL - 
+Create a new class, ScalingCube that will scale up for a set period of time and then scale back down and repeat. Be sure to use everything you've learned in the previous two tasks.
+
+1. Create a new C++ class, "ScalingCube"
+
+2. Implement all variables and components into ScalingCube. Static Mesh and values to track the time and scale. 
+
+3. Create a Blueprint child of ScalingCube, "BP_ScalingCube". 
+
+4. Using variables exposed in C++, implement logic in the Blueprint to make the cube Scale up over a set period of time (your choice) and then scale back down for the same duration and repeat. 
+
+5. Create a new Material that is an Instance of M_Flat, make the material Green and assign it to the static mesh. 
+
+6. When you have this working in BP, move all of the cube scaling logic into the C++ class, similar to the rotating & moving cube tasks, remember to unhook or remove the code from the Blueprint to avoid clashes. 
+
+-- HINTS -- 
+
+- There are no "Add" local functions like AddLocalRotation and AddLocalOffset, so you'll need to look into SetActorScale3D and track the scale you're adding yourself. This will be a (float += float) which you can then plug the result of the calculation directly into the Scale Vector. Float->Vector is allowed. 
+- Due to the above point, you'll likely need extra variables to track the scale of change you're making as well as the time value you've previously been tracking, the logic is the same though. 
+- It will be easier if you follow the steps in order, create variables in the C++ class to be used in your BP code etc. 

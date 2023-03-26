@@ -1,0 +1,18 @@
+01-Task-Character Movement
+
+- GOAL - 
+Understand Input and Player Movement. 
+
+1. Check out the "Input" section in the Project Settings to see the assigned input. - *SUBTASK* Look into the difference between Action and Axis Mappings if you're not familiar with these terms. 
+
+2. Set the BP_PlayerCharacter as the DefaultPawn in the Project's default GameMode. This should be BP_GameMode, found in the root Blueprints folder.
+
+3. Check the BP_PlayerCharacter class to see how the movement is setup. Press play in the level and try moving around to see what all the bindings are responsible for. 
+
+3. Implement all of the Blueprint functionality into the C++ "PlayerCharacter" class provided in Tasks and change the BP_PlayerCharacter to derive from your new PlayerCharacter rather than Character. *SUBTASK* As part of moving the movement code to C++ you might need to look at how to bind Input "InputBindings" in C++ if this topic is new to you. Every example C++ project will have this in the SetupPlayerInputComponent section of code. 
+
+-- HINTS --
+
+- See if you can increase/decrease the jump limit, I've set it to double jump but look in the comments in the BP_PlayerCharacter class to find where you can change this. 
+
+- Creating components in C++ is less of a concern in these tasks, you'll notice I've added the StaticMesh, SpringArm and Camera component all in BP and all of the movevment code in C++ in the Complete examples. I'd recommend the same for you. 

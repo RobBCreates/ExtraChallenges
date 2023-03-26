@@ -1,0 +1,20 @@
+02-Task-Moving Cube
+
+- GOAL - 
+Implement logic to get the BP_MovingCube Actor to move back and forward based on a tracked timer. 
+
+1. Using Task 1 - Rotating Cube as a reference, implement the Static Mesh Component and variables you think will be needed to track the movement in the C++ class MovingCube. 
+
+2. With the C++ class ready, make BP_MovingCube a child of the C++ class MovingCube. HINT - This can be done in BP_MovingCube under Class Settings. 
+
+3. Familiarise yourself with Blueprint logic - Make the cube move on the X-axis a variable number of units over time and after a set a set number of seconds, flip the move direction on the X-axis.
+
+4. Create a new Material that is an Instance of M_Flat, make the material blue and assign it to the static mesh. 
+
+5. When you have this working in BP, move all of the cube movement logic into the C++ class, similar to the rotating cube task, remember to unhook or remove the code from the Blueprint to avoid clashes. 
+
+-- HINTS -- 
+
+- Look for the AddActorLocalOffset to drive the movement. 
+- It will be easier if you follow the steps in order, create variables in the C++ class to be used in your BP code etc. 
+- To work on one Axis at a time you can right-click the Vector, Scale or Rotation pin in the EventGraph and select Split Structure Pin. 
